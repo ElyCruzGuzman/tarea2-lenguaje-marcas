@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Flor de Almería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo.png" alt="">
+            <ul class="menu">
+                <li onclick="return ShowContent('inicio');"><a href="#" >Inicio</a></li>
+                <li onclick="return ShowContent('productos');"><a href="#" >Productos</a></li>
+                <li onclick="return ShowContent('formacion')";><a href="#" >Formación</a></li>
+                <li onclick="return ShowContent('citaPrevia');"><a href="#" >Cita Previa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div id="inicio">
+            <img src="img/banner.png" alt="">
+            <p>La Flor de Almería inicia su actividad el año 2020 siendo una empresa familiar dedicada a la producción y comercialización de Frutales Tropicales y Subtropicales de diversidad de variedades.
+                Contamos con 5.000 metros de invernadero y 5.000 metros de umbráculo.
+                Seguimos innovando, importando planta de Sudamérica, tropicales, ultra tropicales, para coleccionistas específicos, como rambutanes, atemoyas, chicozapotes, canisteles y mucho más… también una amplia extensión de otros frutales de hueso, plantas ornamentales, palmeras y todo tipo de flores, dando lugar a la comercialización de ellas.
+            </p>
+            <ul class="categoria">
+                <li>Plantas
+                    <ul class="subcategoria">
+                        <li>Interior</li>
+                        <li>Exterior</li>
+                    </ul>
+                </li>
+                <li>Fitosanitarios
+                    <ul class="subcategoria">
+                        <li>Fertilizante</li>
+                        <li>Fungicida</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="productos">
+            <h1>Productos</h1>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="img/geranio.jpg" alt="">
+                    <h3>Geranio</h3>
+                </div>
+                <div class="producto">
+                    <img src="img/clavel.jpg" alt="">
+                    <h3>Clavel</h3>
+                </div>
+                <div class="producto">
+                    <img src="img/abono.jpg" alt="">
+                    <h3>Abono</h3>
+                </div>
+                <div class="producto">
+                    <img src="img/nutrex.jpg" alt="">
+                    <h3>Nutrex</h3>
+                </div>
+            </div>
+        </div>
+        <div id="formacion">
+            <h1>Formación</h1>
+            <table class="horario">
+                <tr>
+                    <th>Hora/Día</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <th>17:00</th>
+                    <td rowspan="2">Iniciación a bonsáis</td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="2">Cuidados plantas interior</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>18:00</th>
+                    <td></td>
+                    <td rowspan="2">Poda y Mantenimiento de jardín</td>
+                    <td rowspan="2">Iniciación a bonsáis</td>
+                </tr>
+                <tr>
+                    <th>19:00</th>
+                    <td></td>
+                    <td>Cuidados plantas interior</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="citaPrevia">
+            <div class="citaPrevia">
+                <div class="imagen">
+                    <h1>Cita Previa</h1>
+                    <img src="img/citaPrevia.png" alt="">
+                </div> 
+                <div class="formulario">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Nombre y Apellidos">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <input type="tel" name="" id="" placeholder="Teléfono">
+                        <label for="">Producto o Servicio</label>
+                        <select name="" id="">
+                            <option value="">Geranio</option>
+                            <option value="">Clavel</option>
+                            <option value="">Abono</option>
+                            <option value="">Nutrex</option>
+                            <option value="">Iniciación a bonsáis</option>
+                            <option value="">Cuidados plantas interior</option>
+                            <option value="">Poda y Mantenimiento de jardín</option>
+                        </select>
+                        <label for="">Comentarios</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="datosVivero">
+            <h3>La Flor de Almería</h3>
+            <h3>Calle La Flor 2</h3>
+            <h3>612345670</h3>
+            <h3>direccion@lafloralmeria.es</h3>
+        </div>
+        <div class="datosAlumno">
+            <h3>Elisabeth Cruz Guzmán</h3>
+            <a href="#"><img src="img/logoCreativeCommons.png" alt=""><span>Aviso Legal</span></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function ShowContent(content) {
+            document.getElementById("inicio").style.display = 'none';
+            document.getElementById("productos").style.display = 'none';
+            document.getElementById("formacion").style.display = 'none';
+            document.getElementById("citaPrevia").style.display = 'none';
+            document.getElementById(content).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

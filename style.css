@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("img/background.jpg") no-repeat center center;
+    background-size: cover;
+    color: #3F3F3F;
+}
+
+/* header */
+
+header {
+    background-color: white;
+}
+
+nav {
+    display: inline-flex;
+}
+
+.menu {
+    margin-left: 200px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 42px;
+    border: 1px solid #AEBA47;
+    margin: 0;
+}
+
+.menu li:hover {
+    background-color: #AEBA47;
+    border: 1px solid black;
+}
+
+.menu li:hover a {
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a:visited {
+    color: #3F3F3F;
+}
+
+.logo {
+    margin: 10px;
+}
+
+/* Contenido de Section */
+
+section>div {
+    margin: 20px;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Contenido de Inicio */
+
+#inicio {
+    display: block;
+}
+
+#inicio img {
+    display: block;
+    margin: 10px auto;
+}
+
+#inicio p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.categoria {
+    margin: 40px;
+    list-style-type: decimal;
+}
+
+.subcategoria {
+    margin: 5px 15px;
+    list-style-type: lower-alpha;
+}
+
+/* Contenido de Productos */
+
+#productos {
+    display: none;
+}
+
+#productos h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: inline-flex;
+}
+
+.producto {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 225px;
+    height: 225px;
+}
+
+.producto:hover img {
+    transform: scale(1.5);
+}
+
+/* Contenido de Formación */
+
+#formacion {
+    display: none;
+}
+
+#formacion h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #3F3F3F
+}
+
+.horario {
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* Contenido de Cita Previa */
+
+#citaPrevia {
+    display: none;
+}
+
+.citaPrevia {
+    display: inline-flex;
+}
+
+.imagen {
+    margin: 30px;
+}
+
+.imagen h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.formulario {
+    margin: 30px 100px;
+}
+
+input, label, select, textarea {
+    display: block;
+    margin: 10px 0;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #AEBA47;
+}
+
+button:hover {
+    background-color: #83AF28;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: white;
+    display: inline-flex;
+    width: 100%;
+}
+
+.datosVivero, .datosAlumno {
+    width: 50%;
+    margin: 30px;
+}
+
+.datosVivero h3 {
+    margin: 20px 0;
+}
+.datosAlumno h3 {
+    margin: 20px 0;
+}
+
+.datosAlumno img {
+    padding: 10px;
+    margin-bottom: -12px;
+}
